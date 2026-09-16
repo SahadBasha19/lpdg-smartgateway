@@ -344,3 +344,8 @@ cd "C:\Users\reshu\Downloads\LPDG_Smart_Gateway_23091a32c5"
 
 Then open the app in a web browser:
 - http://127.0.0.1:8000/
+
+
+##Output images pdf
+
+https://drive.google.com/file/d/1GL6nwQUdHr-olA859IQBKpoJ_qEOeJHw/view?usp=drive_link
