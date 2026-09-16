@@ -1,0 +1,8 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Dashboard</title><link rel="stylesheet" href="/static.css"></head><body>
+<header><div><small>LPDG • SOFTWARE DEVELOPMENT</small><h1>Smart Gateway Dashboard</h1><p>Overview and live operational health.</p></div><nav><a href="/">Home</a><a href="/gateways">Gateway Data</a><a href="/risk">Risk Analysis</a><a href="/analytics">Analytics</a><a href="/plots">Plots</a></nav></header>
+<main>
+<section class="panel"><div class="toolbar"><div><h2>Dashboard Summary</h2><p>Operational overview.</p></div><button id="recalc">Recalculate</button></div><div class="cards"><div><span>Total</span><b id="total">—</b></div><div><span>High/Critical</span><b id="high">—</b></div><div><span>Visit</span><b id="visits">—</b></div><div><span>Weekly Exposure</span><b id="exposure">—</b></div></div></section>
+</main>
+<footer>FastAPI • SQLite • REST API • Tests • Decision Engine</footer>
+<script src="/app.js"></script>
+</body></html>

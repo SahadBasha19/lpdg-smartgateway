@@ -1,0 +1,9 @@
+gateway_id,name,failure_rate,incidents_30d,downtime_hours_30d,days_since_last_incident,status
+GW-001,North Gateway,0.18,7,55,2,DEGRADED
+GW-002,East Gateway,0.05,2,12,18,HEALTHY
+GW-003,Central Gateway,0.24,9,80,1,DEGRADED
+GW-004,South Gateway,0.10,4,30,8,WARNING
+GW-005,West Gateway,0.02,1,6,27,HEALTHY
+GW-006,River Gateway,0.16,6,48,4,DEGRADED
+GW-007,Hill Gateway,0.07,3,20,15,WARNING
+GW-008,Industrial Gateway,0.21,8,70,3,DEGRADED

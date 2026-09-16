@@ -1,0 +1,55 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Risk Analysis</title><link rel="stylesheet" href="/static.css"></head><body>
+<header><div><small>LPDG • SOFTWARE DEVELOPMENT</small><h1>Risk Analysis</h1><p>Manual risk scoring and visit recommendation.</p></div><nav><a href="/">Home</a><a href="/dashboard">Dashboard</a><a href="/gateways">Gateway Data</a><a href="/analytics">Analytics</a><a href="/plots">Plots</a></nav></header>
+<main>
+<section class="panel">
+  <div class="toolbar"><div><h2>Manual Risk Calculator</h2><p>Enter operating values to calculate risk score and outcome.</p></div></div>
+  <div class="manual-grid">
+    <label>Failure rate (%)<input id="failure-rate" type="number" min="0" max="100" step="0.1" placeholder="18.5"></label>
+    <label>Incidents in 30 days<input id="incidents" type="number" min="0" max="30" step="1" placeholder="7"></label>
+    <label>Downtime hours / 30 days<input id="downtime" type="number" min="0" max="500" step="1" placeholder="58"></label>
+    <label>Days since last incident<input id="recency" type="number" min="0" max="30" step="1" placeholder="3"></label>
+  </div>
+  <div class="calculator-actions">
+    <button id="calculate-risk">Calculate Risk</button>
+    <button class="secondary" id="load-demo">Load Demo Values</button>
+  </div>
+  <div id="manual-result" class="result-box hidden">
+    <div class="details">
+      <div><span>Risk Score</span><b id="manual-score"></b></div>
+      <div><span>Priority</span><b id="manual-priority"></b></div>
+      <div><span>Decision</span><b id="manual-decision"></b></div>
+      <div><span>Confidence</span><b id="manual-confidence"></b></div>
+    </div>
+    <h3>Why?</h3>
+    <ul id="manual-reasons"></ul>
+  </div>
+</section>
+<section class="panel">
+  <div class="toolbar"><div><h2>Gateway Detail Recalculation</h2><p>Review one gateway and recalculate its decision with updated details.</p></div></div>
+  <div class="manual-grid">
+    <label>Gateway Name<input id="gateway-name" type="text" value="Gateway A"></label>
+    <label>Gateway ID<input id="gateway-id" type="text" value="GW-001"></label>
+    <label>Failure rate (%)<input id="detail-failure-rate" type="number" min="0" max="100" step="0.1" value="18.5"></label>
+    <label>Incidents in 30 days<input id="detail-incidents" type="number" min="0" max="30" step="1" value="7"></label>
+    <label>Downtime hours / 30 days<input id="detail-downtime" type="number" min="0" max="500" step="1" value="58"></label>
+    <label>Days since last incident<input id="detail-recency" type="number" min="0" max="30" step="1" value="3"></label>
+  </div>
+  <div class="calculator-actions">
+    <button id="recalculate-selected">Recalculate Selected Gateway</button>
+    <button class="secondary" id="load-selected-demo">Use Sample Details</button>
+  </div>
+  <div id="selected-result" class="result-box hidden">
+    <div class="details">
+      <div><span>Risk Score</span><b id="selected-score"></b></div>
+      <div><span>Priority</span><b id="selected-priority"></b></div>
+      <div><span>Decision</span><b id="selected-decision"></b></div>
+      <div><span>Confidence</span><b id="selected-confidence"></b></div>
+    </div>
+    <h3>Why?</h3>
+    <ul id="selected-reasons"></ul>
+  </div>
+</section>
+</main>
+<footer>FastAPI • SQLite • REST API • Tests • Decision Engine</footer>
+<script src="/app.js"></script>
+</body></html>
