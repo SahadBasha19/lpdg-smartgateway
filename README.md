@@ -107,10 +107,6 @@ pip install -r requirements.txt
 python run.py
 ```
 
-Then open:
-- http://127.0.0.1:8000/
-- http://127.0.0.1:8000/docs
-
 ### Alternative quick launch
 
 ```powershell
@@ -274,25 +270,6 @@ This is useful for testing "what-if" cases and validating decisions before final
 
 ---
 
-## Visualization Plots
-
-The repository includes three generated plots in `docs/plots`:
-
-### 1. Risk priority distribution
-
-![Gateway Risk Priority Distribution](docs/plots/risk_priority_distribution.png)
-
-### 2. Gateway risk scores
-
-![Gateway Risk Scores](docs/plots/gateway_risk_scores.png)
-
-### 3. Risk components
-
-![Normalized Risk Components](docs/plots/risk_components.png)
-
-These plots are based on the synthetic demo dataset and are intended for demonstration, documentation, and presentation purposes.
-
----
 
 ## Testing
 
@@ -341,10 +318,6 @@ The resume file is included at the project root as:
 cd "C:\Users\reshu\Downloads\LPDG_Smart_Gateway_23091a32c5"
 .\.venv312\Scripts\python.exe run.py
 ```
-
-Then open the app in a web browser:
-- http://127.0.0.1:8000/
-
 
 ##Output images pdf
 
